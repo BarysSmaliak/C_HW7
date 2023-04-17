@@ -38,7 +38,7 @@ int ReadInt (string arg)
     return num;
 }
 
-void ArithmeticMean (int [,] array)
+void ArithmeticMeanColumn (int [,] array)
 {
     Console.WriteLine("Arithmetic mean is: "); 
     for (int j = 0; j < array.GetLength(1); j++)
@@ -61,4 +61,4 @@ int max = ReadInt("maximum value of an array element");
 int [,] Array = CreateArray(length1, length2, min, max);
 PrintArray(Array);
 Console.WriteLine();
-ArithmeticMean(Array);
+ArithmeticMeanColumn(Array);
